@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tv_panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panjang"/>
+
+    <EditText
+        android:id="@+id/edt_lenght"
+        android:layout_below="@id/tv_panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:lines="1"/>
+
+    <TextView
+        android:id="@+id/tv_tinggi"
+        android:layout_below="@+id/edt_lenght"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tinggi"/>
+
+    <EditText
+        android:id="@+id/edt_height"
+        android:layout_below="@id/tv_tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:lines="1"/>
+
+    <TextView
+        android:id="@+id/tv_lebar"
+        android:layout_below="@+id/edt_height"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lebar"/>
+
+    <EditText
+        android:id="@+id/edt_width"
+        android:layout_below="@id/tv_lebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:lines="1"/>
+
+    <Button
+        android:id="@+id/btn_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_width"
+        android:text="Volume"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_below="@+id/btn_volume"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Hasil"/>
+
+</RelativeLayout>
